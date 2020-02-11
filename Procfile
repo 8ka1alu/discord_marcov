@@ -1,1 +1,1 @@
-discordbot: python weather.py
+discordbot: python main.py
