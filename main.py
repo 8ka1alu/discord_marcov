@@ -2,7 +2,7 @@ import discord
 import os, re, json, random
 from janome.tokenizer import Tokenizer
 
-
+TOKEN = os.environ['DISCORD_BOT_TOKEN']
 
 
 dict_file = "chatbot-data.json"
@@ -114,4 +114,4 @@ async def on_message(message):
         await client.send_message(message.channel, res)
 
 
-client.run('token')
+client.run(TOKEN)
