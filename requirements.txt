@@ -1,1 +1,2 @@
 discord.py[voice]
+janome==0.3.10
