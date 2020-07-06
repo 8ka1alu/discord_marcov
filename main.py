@@ -111,7 +111,7 @@ async def on_message(message):
     elif client.user != message.author:
         text = message.content
         res = make_reply(text)
-        await client.send_message(message.channel, res)
+        await client.message.channel.send(res)
 
 
 client.run(TOKEN)
